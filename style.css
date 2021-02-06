@@ -58,7 +58,7 @@ nav{
 /*----------main Section-----------*/
 
 main{
-    margin: 2% 8% 2% 6%;
+    margin: 2% 8% 5% 6%;
     height: 85vh;
     display: flex;
 
@@ -75,20 +75,31 @@ main{
     }
     .profile-section{
         border: solid 1px rgba(0, 0, 0, 0.082);
-        width: 100%;
+        width: 400px;
         padding: 30px 20px;
        
     }
 
-   
+    .bio-section{
     
-  
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+       
+    }
+    
+    .repository-box, .blog-box{
+        grid-gap: 8px;
+        display: grid;
+        grid-template-columns: 2fr ;
+        grid-template-rows: auto auto auto auto;
+        overflow: hidden;
+    }
 }
 
 
 .profile-section{
     border-right: solid 1px rgba(0, 0, 0, 0.082);
-    width: 100%;
+    width: 400px;
 }
 .profile-photo img{
     width: 50%;
@@ -122,8 +133,10 @@ main{
 /*-------Bio section---------*/
 
 .bio-section{
-    margin: 20px 6% 0 6%;
+    width: 800px;
     font-family: 'Roboto', sans-serif;
+    margin: 20px 6% 0 2%;
+    
     
 }
 .bio-section h3{
@@ -162,7 +175,7 @@ main{
     border-top-right-radius: 3px;
     background-color: rgba(0, 0, 0, 0.048);
     overflow: hidden;
-    width: 50vw;
+    
 }
 
 .section-tab button{
@@ -195,7 +208,7 @@ main{
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    width: 50vw;
+    width: 100%;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
   }
@@ -204,7 +217,7 @@ main{
       grid-gap: 8px;
       display: grid;
       grid-template-columns: 2fr 2fr;
-      grid-template-rows: 16vh 16vh;
+      grid-template-rows: auto auto;
       overflow: hidden;
   }
 
