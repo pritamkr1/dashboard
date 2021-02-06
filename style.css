@@ -10,6 +10,11 @@
     background-color: black;
     color: white;
   }
+
+  .binaryinc{
+      text-decoration: none;
+      color: #1a518be0;
+  }
 /*-------End dark mode css-------*/
 
 body{
@@ -143,9 +148,9 @@ main{
     font-size: 2em;
 }
 .bio-section p{
-    font-size: 0.9em;
-    color: rgba(0, 0, 0, 0.603);
-    margin-bottom: 15px;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.521);
+    margin-bottom: 13px;
 }
 
 .bio-section ul li{
