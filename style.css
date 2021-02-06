@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*-------Dark mode css-------*/
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+/*-------End dark mode css-------*/
+
+body{
+    height: 100vh;
+}
+nav{
+    padding: 14px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.062);
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.041);
+}
+.site-title .darkmode{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 6px 15px;
+    font-size: 12px;
+}
+.site-title .darkmode a{
+    text-decoration: none;
+}
+.site-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-title h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.site-title ul li{
+    list-style-type: none;
+} 
+.site-title button{
+    padding: 20px 25px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    transition: 0.3s;
+    background-color: #1871d1e0;
+}
+.site-title button:hover{
+    background-color: black;
+}
+.site-title button a{
+    color: rgba(248, 248, 248, 0.87);
+}
+/*----------main Section-----------*/
+
+main{
+    margin: 2% 8% 2% 6%;
+    height: 85vh;
+    display: flex;
+
+}
+
+@media only screen and (max-width: 768px){
+
+    main{
+        margin: 2% 5%;
+        height: 85vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .profile-section{
+        border-right: solid 0px rgba(0, 0, 0, 0.082);
+        border-bottom: solid 1px rgba(0, 0, 0, 0.082);
+        width: 100%;
+        padding-bottom: 30px;
+       
+    }
+    
+}
+
+
+.profile-section{
+    border-right: solid 1px rgba(0, 0, 0, 0.082);
+    width: 100%;
+}
+.profile-photo img{
+    width: 50%;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.prfile-info h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.prfile-info h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 10px 0;
+}
+.prfile-info i{
+    color: #fff;
+    margin: 0 5px 0 5px;
+    border: 0px solid #1a518be0;
+    border-radius: 100%;
+    padding: 5.5px;
+    background-color: #1871d1e0;
+}
+
+
+/*-------Bio section---------*/
+
+.bio-section{
+    margin: 20px 6% 0 6%;
+    font-family: 'Roboto', sans-serif;
+}
+.bio-section h3{
+    font-weight: 500;
+    font-size: 2em;
+}
+.bio-section p{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.603);
+    margin-bottom: 15px;
+}
+
+.bio-section ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.bio-section ul li button{
+    padding: 10px 15px;
+    margin: 10px 0 10px 0;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+    background-color: #1871d1e0;
+    cursor: pointer;
+}
+.bio-section ul li button:hover{
+    background-color: #1871d1c5;
+}
+
+/*----Section tab----*/
+.section-tab{
+    border: solid 0.5px rgba(0, 0, 0, 0.103);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.048);
+    overflow: hidden;
+    width: 50vw;
+}
+
+.section-tab button{
+    padding: 12px 25px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+.section-tab button:hover{
+    background-color: #ddd;
+}
+.section-tab button:active{
+    background-color: #ccc;
+}
+.tabcontent h4, p{
+    font-weight: 400;
+    margin-top: 10px;
+}
+.tabcontent ul li{
+    list-style-type: none;
+    display: block;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin: 5px 0;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 50vw;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .repository-box, .blog-box{
+      grid-gap: 8px;
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      grid-template-rows: 16vh 16vh;
+      overflow: hidden;
+  }
+
+  .repository-box .box , .blog-box .box{
+      border: 1px solid rgba(0, 0, 0, 0.11);
+      padding: 10px;
+      border-radius: 5px;
+      
+  }
+
+  .repository-box .box h6{
+      font-weight: 400; 
+  }
+
+  .tabcontent h5{
+      font-weight: 300;
+      font-size: 15px;
+      margin: 10px 0;
+  }
+  .blog-box h6{
+    font-weight: 400; 
+  }
+
+  .box span a{
+      text-decoration: none;
+      font-size: 15px;
+  }
+
+
+  /*----------Progress bar---------------*/
+
+  .progressbar .bar{
+      height: 9px;
+      width: 85%;
+      border: 1px solid #1871d1e0;
+      margin: 8px 0;
+      border-radius: 100px;
+  }
+
+    .progressbar h6{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .progressbar .html{
+        background-color: #1871d1e0;
+        width: 85%;
+        height: 7px;
+        border-radius: 100px;
+    }
+    .progressbar .css{
+        background-color: #1871d1e0;
+        width: 80%;
+        height: 7px;
+        border-radius: 100px;
+    }
+    .progressbar .JavaScript{
+        background-color: #1871d1e0;
+        width: 60%;
+        height: 7px;
+        border-radius: 100px;
+    }
+    .progressbar .python{
+        background-color: #1871d1e0;
+        width: 50%;
+        height: 7px;
+        border-radius: 100px;
+    }
+    .progressbar .uiux{
+        background-color: #1871d1e0;
+        width: 55%;
+        height: 7px;
+        border-radius: 100px;
+    }
+    .progressbar .wordpress{
+        background-color: #1871d1e0;
+        width: 86%;
+        height: 7px;
+        border-radius: 100px;
+    }

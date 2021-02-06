@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Pritam kumar">
+
+        <title>Dashbord UI</title>
+
+        <!--Google font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <!--Font awsome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <!--External CSS-->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <!--NNavigation Bar-->
+         <nav>
+             <div class="site-title">
+                 <h3>Dashborad UI</h3>
+                     <button class="darkmode" id="darkmode"> <a href="#" >Enable dark mode</a></button>
+             </div>
+         </nav>
+         <!--Main Dashboard-->
+         <main>
+             <!--Profile Section-->
+             <div class="profile-section">
+                 <div class="profile-photo">
+                    <img src="https://pbs.twimg.com/profile_images/1352286784105938950/lpV2ZNpv_400x400.jpg" class="user-img">
+                </div>
+                <div class="prfile-info">
+                    <h5>@Pritamkr_</h5>
+                    <h6>Instructor at <span> <i class="fab fa-youtube"></i> </span></h6>
+                    <h6>Profession:- Full stack developer</h6>
+                    <h6>Social:- <i class="fab fa-github"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i></h6>
+                    <h6>Skills:- HTML, CSS, JavaScript, Python, Wordpress, UI and UX</h6>
+                </div>
+
+                <div class="progressbar">
+                    <h6>Progress bar:-</h6>
+                    <div class="bar">
+                        <div class="html"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="css"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="JavaScript"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="python"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="uiux"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="wordpress"></div>
+                    </div>
+                </div>
+             </div>
+             <!--Bio Section-->
+             <div class="bio-section">
+                 <h3>Pritam Kumar</h3>
+                 <p>A full stack developer at Binary Inc.</p>
+                 <ul>
+                     <li><button class="contact-btn">Messege <i class="far fa-comments"></i></button></li>
+                     <li><button class="contact-btn">YouTube <i class="fab fa-youtube"></i></button></li>
+                 </ul>
+                 <br><br>
+                 <div class="section-tab">
+                     <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'info')">Info</button>
+
+                     <button id="tab-btn" class="tablinks" onclick="openCity(event, 'repository')">Repository</button>
+
+                     <button id="tab-btn" class="tablinks" onclick="openCity(event, 'blog')">Blog</button>
+                 </div>
+
+                 <div class="tabcontent" id="info">
+                    <h4> Front end and back end developer <i class="fas fa-laptop-code"></i></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptate est quae. Aliquid necessitatibus itaque, reiciendis velit inventore id reprehenderit.</p>
+                     <ul>
+                         <li>Phone: +91 0123456789</li>
+                         <li>Address: India</li>
+                         <li>Website: <a href="https://binaryinc.in/">www.binarinc.in</a></li>
+                     </ul>
+                 </div>
+
+                 <div class="tabcontent" id="repository">
+
+                    <h5>Popular repository <i class="fab fa-github"></i></h5>
+
+                    <div class="repository-box">
+                        <div class="box1 box">
+                            <h6 class="box-title">Survey Form</h6>
+                        </div>
+                        <div class="box2 box">
+                            <h6 class="box-title">Technical blog</h6>
+                        </div>
+                        <div class="box3 box">
+                            <h6 class="box-title">Binary Inc</h6>
+                        </div>
+                        <div class="box4 box">
+                            <h6 class="box-title">Landing pang</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tabcontent" id="blog">
+                    <h5>Blog <i class="fas fa-blog"></i></h5>
+
+                    <div class="blog-box">
+                        <div class="box1 box">
+                            <h6 class="box-title">JavaScript fundamental</h6>
+                            <p>JavaScript has primitives, objects and functions. All of them are values. All are treated as objects,
+                                <span> <a href="https://www.freecodecamp.org/news/learn-these-javascript-fundamentals-and-become-a-better-developer-2a031a0dc9cf/" target="_blank">read more</a></span>
+                            </p>
+                        </div>
+                        <div class="box2 box">
+                            <h6 class="box-title">JavaScript DOM</h6>
+                            <p>"The W3C Document Object Model (DOM) is a platform and language-neutral interface that, <span> <a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank">read more</a></span></p>
+                        </div>
+                        <div class="box3 box">
+                            <h6 class="box-title">JavaScript function</h6>
+                            <p>JavaScript function is defined with the function keyword, followed by a name, followed by parentheses (). <span> <a href="https://www.w3schools.com/js/js_functions.asp" target="_blank">read more</a></span></p>
+                        </div>
+                        <div class="box4 box">
+                            <h6 class="box-title">Data strctures in JavaScript</h6>
+                            <p>As business logic moves from the back to the front more and more, expertise in Frontend Engineering <span> <a href="https://medium.com/siliconwat/data-structures-in-javascript-1b9aed0ea17c" target="_blank">read more</a></span></p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </main>
+        <!--JavaScript-->
+        <script src="script.js"></script>
+        <!--Darkmode js-->
+        <script src="darkmode.js"></script>
+    </body>
+
+    </html>
